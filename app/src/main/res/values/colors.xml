@@ -1,0 +1,26 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="me_primary">#1E88E5</color>      <!-- синий -->
+    <color name="me_secondary">#43A047</color>    <!-- зеленый -->
+    <color name="me_background">#121212</color>   <!-- темный фон -->
+    <color name="me_surface">#1E1E1E</color>      <!-- карточки -->
+    <color name="me_text">#FFFFFF</color>
+    <color name="md_theme_light_primary">#1E88E5</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_secondary">#43A047</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_background">#FFFFFF</color>
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#111111</color>
+
+    <!-- Material3 Dark -->
+    <color name="md_theme_dark_primary">#90CAF9</color>
+    <color name="md_theme_dark_onPrimary">#0B1D2A</color>
+    <color name="md_theme_dark_secondary">#A5D6A7</color>
+    <color name="md_theme_dark_onSecondary">#0B1D12</color>
+    <color name="md_theme_dark_background">#121212</color>
+    <color name="md_theme_dark_surface">#1E1E1E</color>
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Кнопка для верхней панели -->
+    <style name="Widget.MediaExplorer.ToolbarButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">44dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:backgroundTint">@color/me_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <!-- Основная кнопка -->
+    <style name="Widget.MediaExplorer.PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">46dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/me_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Вторичная кнопка -->
+    <style name="Widget.MediaExplorer.SecondaryButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">46dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeColor">@color/me_primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/me_primary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_24"
+        android:title="Поиск"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/baseline_sort_24"
+        android:title="Сортировка"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter_24"
+        android:title="Фильтр"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_period"
+        android:icon="@drawable/outline_acute_24"
+        android:title="Период"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Media Explorer</string>
+    <string-array name="sort_options">
+        <item>Популярность</item>
+        <item>Рейтинг</item>
+        <item>Дата выхода</item>
+    </string-array>
+</resources>

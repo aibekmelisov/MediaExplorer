@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Избранное"
+        app:navigationIcon="@drawable/ic_back_24"
+        app:titleCentered="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <!-- FILTER CHIPS -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Все"
+                android:checkable="true"
+                android:checked="true"
+                app:checkedIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipToWatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎬 Смотреть позже"
+                android:checkable="true"
+                app:checkedIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWatched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ Просмотрено"
+                android:checkable="true"
+                app:checkedIconVisible="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️ Любимое"
+                android:checkable="true"
+                app:checkedIconVisible="false"/>
+        </com.google.android.material.chip.ChipGroup>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:clipToPadding="false"/>
+
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Пока пусто"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Добавь фильмы в избранное\nна экране деталей"
+                    android:textAlignment="center"
+                    android:alpha="0.8"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="14sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sort_popularity"
+        android:title="По популярности" />
+
+    <item
+        android:id="@+id/sort_rating"
+        android:title="По рейтингу" />
+
+    <item
+        android:id="@+id/sort_newest"
+        android:title="Сначала новые" />
+
+    <item
+        android:id="@+id/sort_oldest"
+        android:title="Сначала старые" />
+
+    <item
+        android:id="@+id/sort_title"
+        android:title="По названию (A–Z)" />
+
+</menu>
